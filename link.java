@@ -45,16 +45,16 @@ class SinglyList{
         public class SinglyListMain{
             public static void main(String[] args){
                 int choice;
-                int val;
+                int val=0;
                 SinglyList list = new SinglyList();
                 list.addFirst(10);
                 list.addFirst(20);
                 list.addFirst(30);
-                list.addFirst(40);
+                
 
                 Scanner sc= new Scanner(System.in);
                 do{
-                    system.out.println("press 1 for add first Node \n press 2 for add element at Last Node \n press 3 for display \n press 4 for exit");
+                    system.out.println("press 1 for add first Node \n press 2 for add element at Last Node \n press 3 for display \n press 0 for exit");
 
                 choice= sc.nextInt();
                 switch(choice){
@@ -76,7 +76,7 @@ class SinglyList{
 
                 }
                 }
-                while(choice!=4);
+                while(choice!=val);
             }
         }
     }
